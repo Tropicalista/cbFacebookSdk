@@ -1,6 +1,6 @@
 component accessors="true" singleton {
 
-    THIS.VERSION = '5.4.4';
+    THIS.VERSION = '1.0.0';
 
     THIS.DEFAULT_GRAPH_VERSION = 'v2.8';
 

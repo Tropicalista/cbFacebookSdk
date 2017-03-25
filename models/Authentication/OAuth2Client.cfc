@@ -39,7 +39,7 @@ component accessors="true" {
             'client_id' : variables.app.getId(),
             'state' : arguments.state,
             'response_type' : 'code',
-            'sdk' : 'php-sdk-' & Facebook.VERSION,
+            'sdk' : 'cb-sdk-' & Facebook.VERSION,
             'redirect_uri' : arguments.redirectUrl,
             'scope' : arrayToList(arguments.scope)
         };

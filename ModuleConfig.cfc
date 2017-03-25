@@ -2,9 +2,9 @@ component {
 
 	// Module Properties
 	this.title 				= "cbFacebookSdk";
-	this.author 			= "";
+	this.author 			= "Francesco Pepe";
 	this.webURL 			= "";
-	this.description 		= "";
+	this.description 		= "A module to interact with Facebook Api";
 	this.version			= "1.0.0";
 	// Model Namespace
 	this.modelNamespace		= "cbFacebookSdk";

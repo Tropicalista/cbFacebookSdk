@@ -33,8 +33,8 @@ component accessors="true" singleton {
     public function init( myConfig ){
 
         variables.config = {
-            'app_id' : arguments.myConfig.appID,
-            'app_secret' : arguments.myConfig.appSecret,
+            'app_id' : arguments.myConfig.app_id,
+            'app_secret' : arguments.myConfig.app_secret,
             'default_graph_version' : THIS.DEFAULT_GRAPH_VERSION,
             'enable_beta_mode' : false,
             'http_client_handler' : FacebookHttpClient,

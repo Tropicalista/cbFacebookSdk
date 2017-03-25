@@ -1,7 +1,7 @@
 component {
 
-    property name="FbSession" inject="FacebookSessionPersistentDataHandler@FacebookSdk";
-    property name="FbMemory" inject="FacebookMemoryPersistentDataHandler@FacebookSdk";
+    property name="FbSession" inject="FacebookSessionPersistentDataHandler@cbFacebookSdk";
+    property name="FbMemory" inject="FacebookMemoryPersistentDataHandler@cbFacebookSdk";
 
     public function init(){
         return this;

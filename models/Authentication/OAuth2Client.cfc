@@ -6,9 +6,9 @@ component accessors="true" {
     property name="client";
     property name="graphVersion";
     property name="lastRequest";
-    property name="Facebook" inject="Facebook@FacebookSdk";
-    property name="FacebookRequest" inject="FacebookRequest@FacebookSdk";;
-    property name="AccessToken" inject="AccessToken@FacebookSdk";
+    property name="Facebook" inject="Facebook@cbFacebookSdk";
+    property name="FacebookRequest" inject="FacebookRequest@cbFacebookSdk";;
+    property name="AccessToken" inject="AccessToken@cbFacebookSdk";
 
     public function init(FacebookApp app, FacebookClient client, graphVersion = null){
         variables.app = arguments.app;

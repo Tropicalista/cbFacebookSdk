@@ -7,7 +7,7 @@ component accessors="true" {
     property name="request";
     property name="thrownException";
 
-    property name="GraphNodeFactory" inject="GraphNodeFactory@FacebookSDK";
+    property name="GraphNodeFactory" inject="GraphNodeFactory@cbFacebookSdk";
 
     public function init(FacebookRequest request, body = "", httpStatusCode = "", struct headers ){
         variables.request = arguments.request;

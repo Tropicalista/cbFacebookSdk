@@ -1,15 +1,15 @@
 component {
 
 	// Module Properties
-	this.title 				= "FacebookSdk";
+	this.title 				= "cbFacebookSdk";
 	this.author 			= "";
 	this.webURL 			= "";
 	this.description 		= "";
 	this.version			= "1.0.0";
 	// Model Namespace
-	this.modelNamespace		= "FacebookSdk";
+	this.modelNamespace		= "cbFacebookSdk";
 	// CF Mapping
-	this.cfmapping			= "FacebookSdk";
+	this.cfmapping			= "cbFacebookSdk";
 	// Auto-map models
 	this.autoMapModels		= true;
 	// Module Dependencies
@@ -23,28 +23,28 @@ component {
 	* Fired when the module is registered and activated.
 	*/
 	function onLoad(){
-		binder.map("Facebook@FacebookSdk")
+		binder.map("Facebook@cbFacebookSdk")
 			.to('#moduleMapping#.models.Facebook')
 			.noInit();		
-		binder.map("FacebookApp@FacebookSdk")
+		binder.map("FacebookApp@cbFacebookSdk")
 			.to('#moduleMapping#.models.FacebookApp')
 			.noInit();		
-		binder.map("oAuth2Client@FacebookSdk")
+		binder.map("oAuth2Client@cbFacebookSdk")
 			.to('#moduleMapping#.models.Authentication.oAuth2Client')
 			.noInit();
-		binder.map("FacebookRedirectLoginHelper@FacebookSdk")
+		binder.map("FacebookRedirectLoginHelper@cbFacebookSdk")
 			.to('#moduleMapping#.models.Helpers.FacebookRedirectLoginHelper')
 			.noInit();
-		binder.map("FacebookClient@FacebookSdk")
+		binder.map("FacebookClient@cbFacebookSdk")
 			.to('#moduleMapping#.models.FacebookClient')
 			.noInit();
-		binder.map("AccessToken@FacebookSdk")
+		binder.map("AccessToken@cbFacebookSdk")
 			.to('#moduleMapping#.models.Authentication.AccessToken')
 			.noInit();
-		binder.map("FacebookRequest@FacebookSdk")
+		binder.map("FacebookRequest@cbFacebookSdk")
 			.to('#moduleMapping#.models.FacebookRequest')
 			.noInit();
-		binder.map("GraphNodeFactory@FacebookSdk")
+		binder.map("GraphNodeFactory@cbFacebookSdk")
 			.to('#moduleMapping#.models.GraphNodes.GraphNodeFactory')
 			.noInit();
 	}

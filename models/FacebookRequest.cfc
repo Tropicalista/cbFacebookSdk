@@ -10,10 +10,10 @@ component accessors="true" {
     property name="eTag";
     property name="graphVersion" default="";
 
-    property name="Facebook" inject="Facebook@FacebookSdk";
-    property name="AccessToken" inject="AccessToken@FacebookSdk" scope="instance";
-    property name="FacebookUrlManipulator" inject="FacebookUrlManipulator@FacebookSdk";
-    property name="RequestBodyUrlEncoded" inject="RequestBodyUrlEncoded@FacebookSdk";
+    property name="Facebook" inject="Facebook@cbFacebookSdk";
+    property name="AccessToken" inject="AccessToken@cbFacebookSdk" scope="instance";
+    property name="FacebookUrlManipulator" inject="FacebookUrlManipulator@cbFacebookSdk";
+    property name="RequestBodyUrlEncoded" inject="RequestBodyUrlEncoded@cbFacebookSdk";
 
     public function init(FacebookApp app = "", accessToken = "", method = "", endpoint = "", struct params, eTag = "", graphVersion ){
         if( !structKeyExists( arguments, "params" ) ){

@@ -1,0 +1,25 @@
+{
+    "name":"cbFacebookSdk",
+    "version":"1.2.0",
+    "author":"Francesco Pepe",
+    "location":"https://github.com/Tropicalista/cb-socialite#v1.2.0",
+    "homepage":"https://github.com/Tropicalista/cb-socialite",
+    "documentation":"https://github.com/Tropicalista/cb-socialite",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/Tropicalista/cb-socialite"
+    },
+    "bugs":"https://github.com/Tropicalista/cb-socialite/issues",
+    "slug":"cbFacebookSdk",
+    "shortDescription":"An oauth2 module to perform social login for ContentBox",
+    "type":"contentbox-modules",
+    "dependencies":{
+        "socialite":"^1.1.0",
+        "cbstorages":"^1.0.0"
+    },
+    "scripts":{
+        "postVersion":"package set location='https://github.com/Tropicalista/cb-socialite#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --tags"
+    }
+}

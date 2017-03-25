@@ -2,7 +2,7 @@ component implements="IRequestBody" {
 
     property name="params";
 
-    property name="FacebookUrlmanipulator" inject="FacebookUrlmanipulator@FacebookSdk";;
+    property name="FacebookUrlmanipulator" inject="FacebookUrlmanipulator@cbFacebookSdk";;
 
     public function init( struct params ){
         variables.params = arguments.params;

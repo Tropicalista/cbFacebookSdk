@@ -12,7 +12,7 @@ component accessors="true" {
     property name="enableBetaMode" default="false";
     property name="httpClientHandler";
 
-    property name="FacebookResponse" inject="FacebookResponse@FacebookSdk";
+    property name="FacebookResponse" inject="FacebookResponse@cbFacebookSdk";
 
     public function init( httpClientHandler, enableBeta = false ){
         variables.httpClientHandler = arguments.httpClientHandler;

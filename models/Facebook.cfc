@@ -19,16 +19,16 @@ component accessors="true" singleton {
     property name="persistentDataHandler";
     property name="lastResponse";
 
-    property name="FacebookApp" inject="FacebookApp@FacebookSdk";
-    property name="PRSG" inject="PseudoRandomStringGenerator@FacebookSdk";
-    property name="FacebookUrlDetectionHandler" inject="FacebookUrlDetectionHandler@FacebookSdk";
-    property name="PersistentDataFactory" inject="PersistentDataFactory@FacebookSdk";
-    property name="OAuth2Client" inject="OAuth2Client@FacebookSdk";
-    property name="FacebookRedirectLoginHelper" inject="FacebookRedirectLoginHelper@FacebookSdk";
-    property name="FacebookClient" inject="FacebookClient@FacebookSdk";
-    property name="AccessToken" inject="AccessToken@FacebookSdk";
-    property name="FacebookHttpClient" inject="FacebookHttpClient@FacebookSdk";
-    property name="FacebookRequest" inject="FacebookRequest@FacebookSdk";
+    property name="FacebookApp" inject="FacebookApp@cbFacebookSdk";
+    property name="PRSG" inject="PseudoRandomStringGenerator@cbFacebookSdk";
+    property name="FacebookUrlDetectionHandler" inject="FacebookUrlDetectionHandler@cbFacebookSdk";
+    property name="PersistentDataFactory" inject="PersistentDataFactory@cbFacebookSdk";
+    property name="OAuth2Client" inject="OAuth2Client@cbFacebookSdk";
+    property name="FacebookRedirectLoginHelper" inject="FacebookRedirectLoginHelper@cbFacebookSdk";
+    property name="FacebookClient" inject="FacebookClient@cbFacebookSdk";
+    property name="AccessToken" inject="AccessToken@cbFacebookSdk";
+    property name="FacebookHttpClient" inject="FacebookHttpClient@cbFacebookSdk";
+    property name="FacebookRequest" inject="FacebookRequest@cbFacebookSdk";
 
     public function init( myConfig ){
 

@@ -6,10 +6,10 @@ component accessors="true" {
     property name="urlDetectionHandler";
     property name="persistentDataHandler";
     property name="pseudoRandomStringGenerator";
-    property name="prsgFactory" inject="pseudoRandomStringGenerator@FacebookSdk";;
-    property name="FacebookUrlManipulator" inject="FacebookUrlManipulator@FacebookSdk";;
-    property name="FacebookUrlDetectionHandler" inject="FacebookUrlDetectionHandler@FacebookSdk";;
-    property name="FacebookSessionPersistentDataHandler" inject="FacebookSessionPersistentDataHandler@FacebookSdk";;
+    property name="prsgFactory" inject="pseudoRandomStringGenerator@cbFacebookSdk";;
+    property name="FacebookUrlManipulator" inject="FacebookUrlManipulator@cbFacebookSdk";;
+    property name="FacebookUrlDetectionHandler" inject="FacebookUrlDetectionHandler@cbFacebookSdk";;
+    property name="FacebookSessionPersistentDataHandler" inject="FacebookSessionPersistentDataHandler@cbFacebookSdk";;
 
     public function init(OAuth2Client oAuth2Client, IPersistentData persistentDataHandler, IUrlDetection urlHandler, prsg){
         variables.oAuth2Client = arguments.oAuth2Client;
